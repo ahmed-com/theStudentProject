@@ -64,7 +64,7 @@ function App() {
             id: resData.student.id,
             name: student.name,
             gpa: student.gpa,
-            pic: student.pic
+            pic: resData.student.pic
           },
           ...prevStudents,
         ];

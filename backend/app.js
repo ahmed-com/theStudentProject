@@ -84,7 +84,7 @@ app.post('/students',upload.single('file'), async (req, res) => {
     await student.save();
     res
       .status(201)
-      .json({ message: 'Student saved', student: { id: student.id, name: studentName, gpa: studentGPA } });
+      .json({ message: 'Student saved', student: { id: student.id, name: studentName, gpa: studentGPA, pic: studentPic } });
     console.log('STORED NEW STUDENT');
   } catch (err) {
     console.error('ERROR FETCHING STUDENTS');
