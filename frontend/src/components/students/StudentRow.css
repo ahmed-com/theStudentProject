@@ -1,0 +1,7 @@
+.student-row {
+  cursor: pointer;
+}
+
+.student-row img{
+  width: 80px;
+}

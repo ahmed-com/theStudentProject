@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #383838;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1.1rem;
+}
+
+input:not([type="file"]) {
+  font: inherit;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  width: 50%;
+  margin-bottom: 1rem;
+  border-radius: 30px;
+  text-align: center;
+  color: #242424;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+input[type="file"]::before{
+  content: 'Select student pic';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 65px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+input[type="file"]:hover::before {
+  border-color: black;
+}
+
+input[type="file"]:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+input:focus {
+  outline: none;
+  border-color: #6e0040;
+  background-color: #ffdff2;
+}
+
+button {
+  font: inherit;
+  background-color: #6e0040;
+  color: white;
+  border: 1px solid #6e0040;
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+button:hover,
+button:active {
+  background-color: #b80e71;
+  border-color: #b80e71;
+}
